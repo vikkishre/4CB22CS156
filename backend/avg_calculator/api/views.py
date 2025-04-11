@@ -28,9 +28,7 @@ def get_numbers(request, numberid):
 
     try:
         start = time.time()
-        headers = {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ0MzgxNjkzLCJpYXQiOjE3NDQzODEzOTMsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImRlZDRiMTcwLTZhYmUtNDE3OS1iOTNhLTM0NmUyMWUyNTc3YiIsInN1YiI6InZpdmVrc2hyZXlhczhAZ21haWwuY29tIn0sImVtYWlsIjoidml2ZWtzaHJleWFzOEBnbWFpbC5jb20iLCJuYW1lIjoidml2ZWsgcyBhIiwicm9sbE5vIjoiNGNiMjJjczE1NiIsImFjY2Vzc0NvZGUiOiJuWllEcUgiLCJjbGllbnRJRCI6ImRlZDRiMTcwLTZhYmUtNDE3OS1iOTNhLTM0NmUyMWUyNTc3YiIsImNsaWVudFNlY3JldCI6IlBzRWh3cmVUTkNaRUVwc0gifQ.scrx3rn0H56KJEPVGJOeTGEpnjLagtPjL52aZ5lL5vg"  # full token here
-        }
+     
         response = requests.get(url,headers=headers, timeout=0.5)
         end = time.time()
 
