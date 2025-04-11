@@ -28,7 +28,9 @@ def get_numbers(request, numberid):
 
     try:
         start = time.time()
-     
+         headers={
+             #Your access tokens
+         }
         response = requests.get(url,headers=headers, timeout=0.5)
         end = time.time()
 
